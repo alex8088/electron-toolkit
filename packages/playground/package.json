@@ -1,0 +1,18 @@
+{
+  "name": "@electron-toolkit/playground",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "rimraf dist && tsc -p .",
+    "watch": "tsc -w",
+    "lint": "eslint --ext .ts src/**",
+    "start": "npm run build && electron .",
+    "serve": "electron ."
+  },
+  "dependencies": {
+    "@electron-toolkit/preload": "workspace:*",
+    "@electron-toolkit/tsconfig": "workspace:*",
+    "@electron-toolkit/utils": "workspace:*"
+  }
+}

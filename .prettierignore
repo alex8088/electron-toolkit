@@ -1,0 +1,5 @@
+docs/dist/
+packages/playground/dist/
+packages/preload/dist/
+packages/utils/dist/
+pnpm-lock.yaml

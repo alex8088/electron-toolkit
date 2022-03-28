@@ -1,0 +1,27 @@
+{
+  "name": "@electron-toolkit/tsconfig",
+  "version": "1.0.0",
+  "description": "A base TSConfig for working with Electron.",
+  "main": "tsconfig.json",
+  "author": "Alex Wei<https://github.com/alex8088>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex8088/electron-toolkit.git",
+    "directory": "packages/tsconfig"
+  },
+  "bugs": {
+    "url": "https://github.com/alex8088/electron-toolkit/issues"
+  },
+  "homepage": "https://github.com/alex8088/electron-toolkit/tree/master/packages/tsconfig#readme",
+  "keywords": [
+    "electron",
+    "tsconfig"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "@types/node": "*"
+  }
+}

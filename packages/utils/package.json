@@ -1,0 +1,35 @@
+{
+  "name": "@electron-toolkit/utils",
+  "version": "1.0.0",
+  "description": "Utils for Electron main process.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "Alex Wei<https://github.com/alex8088>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex8088/electron-toolkit.git",
+    "directory": "packages/utils"
+  },
+  "bugs": {
+    "url": "https://github.com/alex8088/electron-toolkit/issues"
+  },
+  "homepage": "https://github.com/alex8088/electron-toolkit/tree/master/packages/utils#readme",
+  "keywords": [
+    "electron",
+    "toolkit",
+    "main process"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc -p ."
+  },
+  "peerDependencies": {
+    "electron": "^13.0.0"
+  },
+  "devDependencies": {
+    "jszip": "^3.7.1"
+  }
+}
