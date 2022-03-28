@@ -1,3 +1,9 @@
+### v1.0.2 (_2022-03-28_)
+
+#### Bug Fixes
+
+- **utils**: jszip dep required
+
 ### v1.0.1 (_2022-03-28_)
 
 #### Bug Fixes

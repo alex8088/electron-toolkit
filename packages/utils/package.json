@@ -1,6 +1,6 @@
 {
   "name": "@electron-toolkit/utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utils for Electron main process.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -29,7 +29,7 @@
   "peerDependencies": {
     "electron": ">=13.0.0"
   },
-  "devDependencies": {
+  "dependencies": {
     "jszip": "^3.7.1"
   }
 }
