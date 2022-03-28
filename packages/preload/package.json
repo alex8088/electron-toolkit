@@ -1,6 +1,6 @@
 {
   "name": "@electron-toolkit/preload",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Toolkit for electron preload scripts.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,6 +26,6 @@
     "webFrame"
   ],
   "peerDependencies": {
-    "electron": "^13.0.0"
+    "electron": ">=13.0.0"
   }
 }
