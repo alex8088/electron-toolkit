@@ -1,0 +1,31 @@
+{
+  "name": "@electron-toolkit/vue",
+  "version": "1.0.0",
+  "description": "Easy to use Electron APIs in Vue3.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "Alex Wei<https://github.com/alex8088>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex8088/electron-toolkit.git",
+    "directory": "packages/vue"
+  },
+  "bugs": {
+    "url": "https://github.com/alex8088/electron-toolkit/issues"
+  },
+  "homepage": "https://github.com/alex8088/electron-toolkit/tree/master/packages/vue#readme",
+  "keywords": [
+    "electron",
+    "toolkit",
+    "preload",
+    "ipcRenderer",
+    "vue"
+  ],
+  "peerDependencies": {
+    "electron": ">=13.0.0"
+  }
+}
