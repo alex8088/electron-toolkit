@@ -31,6 +31,14 @@ if (process.contextIsolated) {
 }
 ```
 
+or
+
+```javascript
+import { electronAPI } from '@electron-toolkit/preload'
+
+exposeElectronAPI()
+```
+
 Then, use the Electron APIs directly in the renderer process：
 
 ```javascript
@@ -65,20 +73,28 @@ declare global {
 ### IpcRenderer
 
 - `send`
+- `sendTo`
+- `sendSync`
+- `sendToHost`
 - `invoke`
+- `postMessage`
 - `on`
 - `once`
+- `removeAllListeners`
 - `removeListener`
 
 ### WebFrame
 
 - `insertCSS`
+- `setZoomFactor`
+- `setZoomLevel`
 
 ### NodeProcess
 
 - `platform` property
 - `versions` property
+- `env` property
 
 ## License
 
-[MIT](./LICENSE)
+[MIT](./LICENSE) © alex.wei
