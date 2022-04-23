@@ -58,7 +58,7 @@ export const optimizer: Optimizer = {
             if (webContents.isDevToolsOpened()) {
               webContents.closeDevTools()
             } else {
-              webContents.openDevTools()
+              webContents.openDevTools({ mode: 'undocked' })
               console.log('Open dev tool...')
             }
           }
