@@ -1,4 +1,4 @@
-/* eslint-disable  @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 export interface IpcRendererEvent extends Event {
   // Docs: https://electronjs.org/docs/api/structures/ipc-renderer-event
@@ -31,6 +31,10 @@ export interface IpcRenderer {
    */
   once(channel: string, listener: (event: IpcRendererEvent, ...args: any[]) => void): this
   /**
+   * Removes all listeners, or those of the specified `channel`.
+   */
+  removeAllListeners(channel: string): this
+  /**
    * Removes the specified `listener` from the listener array for the specified
    * `channel`.
    */
@@ -42,7 +46,7 @@ export interface IpcRenderer {
    * Sending Functions, Promises, Symbols, WeakMaps, or WeakSets will throw an
    * exception.
    *
-   * &gt; **NOTE:** Sending non-standard JavaScript types such as DOM objects or special
+   * **NOTE:** Sending non-standard JavaScript types such as DOM objects or special
    * Electron objects will throw an exception.
    *
    * Since the main process does not have support for DOM objects such as
@@ -69,7 +73,7 @@ export interface IpcRenderer {
    * included. Sending Functions, Promises, Symbols, WeakMaps, or WeakSets will throw
    * an exception.
    *
-   * &gt; **NOTE:** Sending non-standard JavaScript types such as DOM objects or special
+   * **NOTE:** Sending non-standard JavaScript types such as DOM objects or special
    * Electron objects will throw an exception.
    *
    * Since the main process does not have support for DOM objects such as
@@ -87,6 +91,56 @@ export interface IpcRenderer {
    * If you do not need a response to the message, consider using `ipcRenderer.send`.
    */
   invoke(channel: string, ...args: any[]): Promise<any>
+  /**
+   * Send a message to the main process, optionally transferring ownership of zero or
+   * more `MessagePort` objects.
+   *
+   * The transferred `MessagePort` objects will be available in the main process as
+   * `MessagePortMain` objects by accessing the `ports` property of the emitted
+   * event.
+   *
+   * **NOTE:** Cannot transfer these when `contextIsolation: true`.
+   *
+   * For example:
+   *
+   * For more information on using `MessagePort` and `MessageChannel`, see the MDN
+   * documentation.
+   */
+  postMessage(channel: string, message: any, transfer?: MessagePort[]): void
+  /**
+   * The value sent back by the `ipcMain` handler.
+   *
+   * Send a message to the main process via `channel` and expect a result
+   * synchronously. Arguments will be serialized with the Structured Clone Algorithm,
+   * just like `window.postMessage`, so prototype chains will not be included.
+   * Sending Functions, Promises, Symbols, WeakMaps, or WeakSets will throw an
+   * exception.
+   *
+   * **NOTE:** Sending non-standard JavaScript types such as DOM objects or special
+   * Electron objects will throw an exception.
+   *
+   * Since the main process does not have support for DOM objects such as
+   * `ImageBitmap`, `File`, `DOMMatrix` and so on, such objects cannot be sent over
+   * Electron's IPC to the main process, as the main process would have no way to
+   * decode them. Attempting to send such objects over IPC will result in an error.
+   *
+   * The main process handles it by listening for `channel` with `ipcMain` module,
+   * and replies by setting `event.returnValue`.
+   *
+   * warning: **WARNING**: Sending a synchronous message will block the whole
+   * renderer process until the reply is received, so use this method only as a last
+   * resort. It's much better to use the asynchronous version, `invoke()`.
+   */
+  sendSync(channel: string, ...args: any[]): any
+  /**
+   * Sends a message to a window with `webContentsId` via `channel`.
+   */
+  sendTo(webContentsId: number, channel: string, ...args: any[]): void
+  /**
+   * Like `ipcRenderer.send` but the event will be sent to the `<webview>` element in
+   * the host page instead of the main process.
+   */
+  sendToHost(channel: string, ...args: any[]): void
 }
 
 export interface WebFrame {
@@ -100,6 +154,26 @@ export interface WebFrame {
    * stylesheet.
    */
   insertCSS(css: string): string
+
+  /**
+   * Changes the zoom factor to the specified factor. Zoom factor is zoom percent
+   * divided by 100, so 300% = 3.0.
+   *
+   * The factor must be greater than 0.0.
+   */
+  setZoomFactor(factor: number): void
+
+  /**
+   * Changes the zoom level to the specified level. The original size is 0 and each
+   * increment above or below represents zooming 20% larger or smaller to default
+   * limits of 300% and 50% of original size, respectively.
+   *
+   * **NOTE**: The zoom policy at the Chromium level is same-origin, meaning that
+   * the zoom level for a specific domain propagates across all instances of windows
+   * with the same domain. Differentiating the window URLs will make zoom work
+   * per-window.
+   */
+  setZoomLevel(level: number): void
 }
 
 export interface NodeProcess {
@@ -113,6 +187,11 @@ export interface NodeProcess {
    * A list of versions for the current node.js/electron configuration.
    */
   readonly versions: { [key: string]: string | undefined }
+
+  /**
+   * The process.env property returns an object containing the user environment.
+   */
+  readonly env: { [key: string]: string | undefined }
 }
 
 export interface ElectronAPI {
