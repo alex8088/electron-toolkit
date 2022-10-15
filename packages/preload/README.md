@@ -27,7 +27,7 @@ if (process.contextIsolated) {
     console.error(error)
   }
 } else {
-  window.electron = globals
+  window.electron = electronAPI
 }
 ```
 
