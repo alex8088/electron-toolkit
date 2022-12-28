@@ -1,3 +1,9 @@
+### v1.0.3 (_2022-12-28_)
+
+#### Bug Fixes
+
+- fix: `sendSync` does not return
+
 ### v1.0.2 (_2022-04-23_)
 
 #### Features
