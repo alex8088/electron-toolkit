@@ -12,7 +12,7 @@ export const electronAPI: ElectronAPI = {
       ipcRenderer.sendTo(webContentsId, channel, ...args)
     },
     sendSync(channel, ...args) {
-      ipcRenderer.sendSync(channel, ...args)
+      return ipcRenderer.sendSync(channel, ...args)
     },
     sendToHost(channel, ...args) {
       ipcRenderer.sendToHost(channel, ...args)
