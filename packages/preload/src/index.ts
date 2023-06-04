@@ -27,11 +27,12 @@ export const electronAPI: ElectronAPI = {
     },
     on(channel, listener) {
       ipcRenderer.on(channel, listener)
-      return this
+      return () => {
+        ipcRenderer.removeListener(channel, listener)
+      }
     },
     once(channel, listener) {
       ipcRenderer.once(channel, listener)
-      return this
     },
     removeListener(channel, listener) {
       ipcRenderer.removeListener(channel, listener)
@@ -39,7 +40,6 @@ export const electronAPI: ElectronAPI = {
     },
     removeAllListeners(channel) {
       ipcRenderer.removeAllListeners(channel)
-      return this
     }
   },
   webFrame: {
