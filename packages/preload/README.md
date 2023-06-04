@@ -54,6 +54,10 @@ window.electron.ipcRenderer.invoke('electron:doAThing', '').then(re => {
 window.electron.ipcRenderer.on('electron:reply', (_, args) => {
   console.log(args)
 })
+
+// Remove Listener
+const removeListener = window.electron.ipcRenderer.on('electron:reply', (_, args) => {})
+removeListener()
 ```
 
 **Note**: If you're building your Electron app with TypeScript, you may want to get TypeScript intelliSense for the renderer process. So that you can create a `*.d.ts` declaration file and globally augment the `Window` interface:
