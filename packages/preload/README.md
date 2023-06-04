@@ -55,7 +55,7 @@ window.electron.ipcRenderer.on('electron:reply', (_, args) => {
   console.log(args)
 })
 
-// Remove Listener
+// Remove a listener
 const removeListener = window.electron.ipcRenderer.on('electron:reply', (_, args) => {})
 removeListener()
 ```
