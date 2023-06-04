@@ -1,7 +1,7 @@
 import { ipcRenderer, webFrame, contextBridge } from 'electron'
 import { ElectronAPI } from './types'
 
-export type { ElectronAPI, IpcRenderer, IpcRendererEvent, WebFrame, NodeProcess } from './types'
+export type { ElectronAPI, IpcRenderer, WebFrame, NodeProcess } from './types'
 
 export const electronAPI: ElectronAPI = {
   ipcRenderer: {

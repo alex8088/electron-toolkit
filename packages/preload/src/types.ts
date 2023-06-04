@@ -1,21 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-
-export interface IpcRendererEvent extends Event {
-  // Docs: https://electronjs.org/docs/api/structures/ipc-renderer-event
-
-  /**
-   * The `IpcRenderer` instance that emitted the event originally
-   */
-  sender: IpcRenderer
-  /**
-   * The `webContents.id` that sent the message, you can call
-   * `event.sender.sendTo(event.senderId, ...)` to reply to the message, see
-   * ipcRenderer.sendTo for more information. This only applies to messages sent from
-   * a different renderer. Messages sent directly from the main process set
-   * `event.senderId` to `0`.
-   */
-  senderId: number
-}
+import type { IpcRendererEvent } from 'electron'
 
 export interface IpcRenderer {
   // Docs: https://electronjs.org/docs/api/ipc-renderer
