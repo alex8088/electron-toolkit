@@ -23,6 +23,9 @@ export interface IpcRenderer {
   /**
    * Removes the specified `listener` from the listener array for the specified
    * `channel`.
+   *
+   * @deprecated Use `on` listen return instead
+   *
    */
   removeListener(channel: string, listener: (...args: any[]) => void): this
   /**
