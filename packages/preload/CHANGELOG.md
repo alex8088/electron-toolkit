@@ -1,3 +1,25 @@
+### v2.0.0 (_2023-06-04_)
+
+New way to remove a listener
+
+```ts
+const listener = (_, ...args): void => {}
+const ipc = window.electron.ipcRenderer
+
+// Old, remove listener not work
+ipc.on(channel, listener)
+ipc.removeListener(channel, listener)
+
+// New
+const removeListener = ipc.on(channel, listener)
+removeListener()
+```
+
+- refactor: remove IpcRendererEvent type export and use Electron's own type
+- refactor: remove listener
+- refactor: deprecated IpcRenderer removeListener API
+- chore: export IpcRendererListener type
+
 ### v1.0.3 (_2022-12-28_)
 
 #### Bug Fixes
