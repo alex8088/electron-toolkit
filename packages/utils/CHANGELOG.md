@@ -1,3 +1,7 @@
+### v2.0.0 (_2023-07-22_)
+
+- refactor(utils): deprecated `devTools`
+
 ### v1.0.2 (_2022-03-28_)
 
 #### Bug Fixes
