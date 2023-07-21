@@ -1,6 +1,5 @@
 export * from './is'
 export * from './platform'
-export * from './devTools'
 export * from './app'
 export * from './ipcHelper'
 export * from './optimizer'

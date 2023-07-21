@@ -32,28 +32,6 @@ npm i @electron-toolkit/utils
 
   - Type: boolean, `true` when `process.platform` is `linux`
 
-### devTools
-
-- install
-
-  - Type: (extensionId: ChromeExtension, options?: ChromeExtensionOptions): Promise<void>
-
-  - Kind: async, sequential
-
-    Example:
-
-    ```javascript
-    // main.js
-    import { app } from 'electron'
-    import { devTools } from '@electron-toolkit/utils'
-
-    app.whenReady().then(() => {
-      devTools.install('REACT_DEVELOPER_TOOLS', { allowFileAccess: true })
-    })
-    ```
-
-    Note: `extensionId` see [ChromeExtension](./src/devTools.ts)
-
 ### electronApp
 
 - setAppUserModelId

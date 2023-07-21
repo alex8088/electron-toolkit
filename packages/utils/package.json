@@ -28,8 +28,5 @@
   },
   "peerDependencies": {
     "electron": ">=13.0.0"
-  },
-  "dependencies": {
-    "jszip": "^3.7.1"
   }
 }
