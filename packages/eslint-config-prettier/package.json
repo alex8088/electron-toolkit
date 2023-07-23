@@ -1,0 +1,37 @@
+{
+  "name": "@electron-toolkit/eslint-config-prettier",
+  "version": "0.0.0",
+  "description": "eslint-config-prettier for Electron.",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "author": "Alex Wei<https://github.com/alex8088>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex8088/electron-toolkit.git",
+    "directory": "packages/eslint-config-prettier"
+  },
+  "bugs": {
+    "url": "https://github.com/alex8088/electron-toolkit/issues"
+  },
+  "homepage": "https://github.com/alex8088/electron-toolkit/tree/master/packages/eslint-config-prettier#readme",
+  "keywords": [
+    "electron",
+    "eslint",
+    "prettier"
+  ],
+  "dependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "prettier": "^3.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 8.0.0",
+    "prettier": ">= 3.0.0"
+  }
+}
