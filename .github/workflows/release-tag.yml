@@ -4,8 +4,7 @@ on:
       - 'utils*'
       - 'tsconfig*'
       - 'preload*'
-      - 'vue*'
-      - 'react*'
+      - 'eslint-config*'
 
 name: Create Release
 
