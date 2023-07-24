@@ -1,6 +1,6 @@
 # @electron-toolkit/eslint-config-prettier
 
-> eslint-config-prettier for Electron.
+> ESLint config with Prettier support for Electron projects.
 
 Requires `eslint >= 8.0.0` and `prettier >= 3.0.0`.
 
@@ -22,7 +22,7 @@ Add `@electron-toolkit/eslint-config-prettier` to the `extends` array in your `.
 module.exports = {
   extends: [
     // ... other configs
-    "@electron-toolkit/eslint-config-prettier"
+    '@electron-toolkit/eslint-config-prettier'
   ]
 }
 ```
