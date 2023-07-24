@@ -1,6 +1,6 @@
 {
   "name": "@electron-toolkit/eslint-config-prettier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint config with Prettier support for Electron projects.",
   "main": "index.js",
   "files": [
