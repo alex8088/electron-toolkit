@@ -1,7 +1,7 @@
 {
   "name": "@electron-toolkit/eslint-config",
   "version": "1.0.0",
-  "description": "Basic ESLint config for Electron.",
+  "description": "Basic ESLint config for Electron projects.",
   "main": "index.js",
   "files": [
     "index.js"

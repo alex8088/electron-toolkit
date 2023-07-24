@@ -1,6 +1,6 @@
 # @electron-toolkit/eslint-config
 
-> Basic ESLint config for Electron.
+> Basic ESLint config for Electron projects.
 
 Requires `eslint >= 8.0.0`.
 
@@ -18,8 +18,6 @@ Add `@electron-toolkit/eslint-config` to the `extends` array in your `.eslintrc.
 
 ```js
 module.exports = {
-  extends: [
-    "@electron-toolkit"
-  ]
+  extends: ['@electron-toolkit']
 }
 ```
