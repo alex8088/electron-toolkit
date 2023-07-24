@@ -1,0 +1,30 @@
+{
+  "name": "@electron-toolkit/eslint-config",
+  "version": "0.0.0",
+  "description": "Basic ESLint config for Electron.",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "author": "Alex Wei<https://github.com/alex8088>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex8088/electron-toolkit.git",
+    "directory": "packages/eslint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/alex8088/electron-toolkit/issues"
+  },
+  "homepage": "https://github.com/alex8088/electron-toolkit/tree/master/packages/eslint-config#readme",
+  "keywords": [
+    "electron",
+    "eslint"
+  ],
+  "devDependencies": {
+    "eslint": "^8.45.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 8.0.0"
+  }
+}
