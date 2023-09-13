@@ -65,7 +65,7 @@ export const optimizer: Optimizer = {
         }
         if (escToCloseWindow) {
           if (input.code === 'Escape' && input.key !== 'Process') {
-            window.close
+            window.close()
             event.preventDefault()
           }
         }
