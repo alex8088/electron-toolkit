@@ -1,3 +1,7 @@
+### v2.0.1 (_2023-09-13_)
+
+- fix(utils): closing window via `esc` not working
+
 ### v2.0.0 (_2023-07-22_)
 
 - refactor(utils): deprecated `devTools`
