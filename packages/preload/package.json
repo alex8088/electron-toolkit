@@ -26,6 +26,6 @@
     "webFrame"
   ],
   "peerDependencies": {
-    "electron": ">=13.0.0"
+    "electron": ">=13.0.0-0"
   }
 }
