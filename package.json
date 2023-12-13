@@ -35,7 +35,7 @@
     "@types/node": "^16.11.19",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
-    "electron": "^16.0.6",
+    "electron": "^28.0.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-define-config": "^1.21.0",
