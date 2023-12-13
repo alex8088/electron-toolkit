@@ -2,8 +2,16 @@
   "name": "@electron-toolkit/preload",
   "version": "2.0.0",
   "description": "Toolkit for electron preload scripts.",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
   "files": [
     "dist"
   ],
@@ -25,6 +33,9 @@
     "ipcRenderer",
     "webFrame"
   ],
+  "scripts": {
+    "build": "unbuild"
+  },
   "peerDependencies": {
     "electron": ">=13.0.0"
   }
