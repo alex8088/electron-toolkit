@@ -24,11 +24,11 @@ importers:
         specifier: ^8.55.0
         version: 8.55.0
       eslint-config-prettier:
-        specifier: ^8.8.0
-        version: 8.8.0(eslint@8.55.0)
+        specifier: ^9.1.0
+        version: 9.1.0(eslint@8.55.0)
       eslint-plugin-prettier:
         specifier: ^5.0.1
-        version: 5.0.1(eslint-config-prettier@8.8.0)(eslint@8.55.0)(prettier@3.1.1)
+        version: 5.0.1(eslint-config-prettier@9.1.0)(eslint@8.55.0)(prettier@3.1.1)
       lint-staged:
         specifier: ^15.2.0
         version: 15.2.0
@@ -63,11 +63,11 @@ importers:
   packages/eslint-config-prettier:
     dependencies:
       eslint-config-prettier:
-        specifier: ^8.8.0
-        version: 8.8.0(eslint@8.55.0)
+        specifier: ^9.1.0
+        version: 9.1.0(eslint@8.55.0)
       eslint-plugin-prettier:
         specifier: ^5.0.1
-        version: 5.0.1(eslint-config-prettier@8.8.0)(eslint@8.55.0)(prettier@3.1.1)
+        version: 5.0.1(eslint-config-prettier@9.1.0)(eslint@8.55.0)(prettier@3.1.1)
     devDependencies:
       eslint:
         specifier: ^8.55.0
@@ -1715,15 +1715,15 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  /eslint-config-prettier@8.8.0(eslint@8.55.0):
-    resolution: {integrity: sha512-wLbQiFre3tdGgpDv67NQKnJuTlcUVYHas3k+DZCc2U2BadthoEY4B7hLPvAxaqdyOGCzuLfii2fqGph10va7oA==}
+  /eslint-config-prettier@9.1.0(eslint@8.55.0):
+    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
       eslint: 8.55.0
 
-  /eslint-plugin-prettier@5.0.1(eslint-config-prettier@8.8.0)(eslint@8.55.0)(prettier@3.1.1):
+  /eslint-plugin-prettier@5.0.1(eslint-config-prettier@9.1.0)(eslint@8.55.0)(prettier@3.1.1):
     resolution: {integrity: sha512-m3u5RnR56asrwV/lDC4GHorlW75DsFfmUcjfCYylTUs85dBRnB7VM6xG8eCMJdeDRnppzmxZVf1GEPJvl1JmNg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -1738,7 +1738,7 @@ packages:
         optional: true
     dependencies:
       eslint: 8.55.0
-      eslint-config-prettier: 8.8.0(eslint@8.55.0)
+      eslint-config-prettier: 9.1.0(eslint@8.55.0)
       prettier: 3.1.1
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.5
