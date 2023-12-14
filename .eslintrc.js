@@ -1,6 +1,4 @@
-const { defineConfig } = require('eslint-define-config')
-
-module.exports = defineConfig({
+module.exports = {
   root: true,
   env: {
     es6: true,
@@ -38,4 +36,4 @@ module.exports = defineConfig({
       }
     }
   ]
-})
+}

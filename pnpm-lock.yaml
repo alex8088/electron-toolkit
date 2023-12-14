@@ -26,9 +26,6 @@ importers:
       eslint-config-prettier:
         specifier: ^8.8.0
         version: 8.8.0(eslint@8.55.0)
-      eslint-define-config:
-        specifier: ^1.21.0
-        version: 1.21.0
       eslint-plugin-prettier:
         specifier: ^5.0.1
         version: 5.0.1(eslint-config-prettier@8.8.0)(eslint@8.55.0)(prettier@3.1.1)
@@ -1740,11 +1737,6 @@ packages:
       eslint: '>=7.0.0'
     dependencies:
       eslint: 8.55.0
-
-  /eslint-define-config@1.21.0:
-    resolution: {integrity: sha512-OKfreV19Nw4yK4UX1CDkv5FXWdzeF+VSROsO28DVi1BrzqOD4a3U71LJqEhcupK65MoLXxARQ0pSg8bDvNPONA==}
-    engines: {node: ^16.13.0 || >=18.0.0, npm: '>=7.0.0', pnpm: '>= 8.6.0'}
-    dev: true
 
   /eslint-plugin-prettier@5.0.1(eslint-config-prettier@8.8.0)(eslint@8.55.0)(prettier@3.1.1):
     resolution: {integrity: sha512-m3u5RnR56asrwV/lDC4GHorlW75DsFfmUcjfCYylTUs85dBRnB7VM6xG8eCMJdeDRnppzmxZVf1GEPJvl1JmNg==}
