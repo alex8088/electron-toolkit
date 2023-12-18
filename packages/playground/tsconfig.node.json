@@ -1,7 +1,11 @@
 {
   "extends": "@electron-toolkit/tsconfig/tsconfig.node.json",
-  "include": ["src/main.ts", "src/preload.ts"],
+  "include": ["src/main.mts", "src/preload.mts"],
   "compilerOptions": {
-    "composite": true
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "declaration": false,
+    "outDir": "dist"
   }
 }

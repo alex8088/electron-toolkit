@@ -1,5 +1,5 @@
 import { app, BrowserWindow } from 'electron'
-import * as path from 'path'
+import { fileURLToPath } from 'url'
 
 import { optimizer, electronApp } from '@electron-toolkit/utils'
 
@@ -11,7 +11,8 @@ function createWindow(): void {
     show: false,
     autoHideMenuBar: true,
     webPreferences: {
-      preload: path.join(__dirname, './preload.js')
+      preload: fileURLToPath(new URL('./preload.mjs', import.meta.url)),
+      sandbox: false
     }
   })
 
@@ -20,7 +21,7 @@ function createWindow(): void {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, '../index.html'))
+  mainWindow.loadFile(fileURLToPath(new URL('../index.html', import.meta.url)))
 }
 
 app.on('ready', () => {

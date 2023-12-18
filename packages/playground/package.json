@@ -2,9 +2,10 @@
   "name": "@electron-toolkit/playground",
   "version": "0.0.1",
   "private": true,
-  "main": "dist/main.js",
+  "type": "module",
+  "main": "dist/main.mjs",
   "scripts": {
-    "build": "rimraf dist && tsc -p .",
+    "build": "rimraf dist && tsc -p tsconfig.node.json && tsc -p tsconfig.web.json",
     "watch": "tsc -w",
     "lint": "eslint --ext .ts src/**",
     "start": "npm run build && electron .",
