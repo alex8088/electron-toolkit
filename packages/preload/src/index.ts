@@ -9,7 +9,13 @@ export const electronAPI: ElectronAPI = {
       ipcRenderer.send(channel, ...args)
     },
     sendTo(webContentsId, channel, ...args) {
-      ipcRenderer.sendTo(webContentsId, channel, ...args)
+      const electronVer = process.versions.electron
+      const electronMajorVer = electronVer ? parseInt(electronVer.split('.')[0]) : 0
+      if (electronMajorVer >= 28) {
+        throw new Error('"sendTo" method has been removed since Electron 28.')
+      } else {
+        ipcRenderer.sendTo(webContentsId, channel, ...args)
+      }
     },
     sendSync(channel, ...args) {
       return ipcRenderer.sendSync(channel, ...args)

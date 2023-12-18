@@ -123,6 +123,8 @@ export interface IpcRenderer {
   sendSync(channel: string, ...args: any[]): any
   /**
    * Sends a message to a window with `webContentsId` via `channel`.
+   *
+   * @deprecated This methond has been removed since Electron 28.
    */
   sendTo(webContentsId: number, channel: string, ...args: any[]): void
   /**
