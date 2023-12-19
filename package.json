@@ -12,7 +12,7 @@
     "typecheck": "tsc --noEmit",
     "build:preload": "pnpm run -C packages/preload build",
     "build:utils": "pnpm run -C packages/utils build",
-    "dev": "cd packages/playground && npm run start"
+    "dev": "pnpm run -C packages/playground start"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
