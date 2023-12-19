@@ -1,3 +1,8 @@
+### v2.0.0 (_2023-12-19_)
+
+- chore(deps): update eslint-config-prettier to v9
+- chore(deps): update all non-major dependencies
+
 ### v1.0.1 (_2023-07-24_)
 
 - chore: update description
