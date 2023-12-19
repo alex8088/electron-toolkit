@@ -24,9 +24,7 @@ export const electronAPI: ElectronAPI = {
       ipcRenderer.sendToHost(channel, ...args)
     },
     postMessage(channel, message, transfer) {
-      if (!process.contextIsolated) {
-        ipcRenderer.postMessage(channel, message, transfer)
-      }
+      ipcRenderer.postMessage(channel, message, transfer)
     },
     invoke(channel, ...args) {
       return ipcRenderer.invoke(channel, ...args)
