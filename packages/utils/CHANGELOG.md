@@ -1,3 +1,8 @@
+### v3.0.0 (_2023-12-19_)
+
+- feat: support ESM
+- fix: ignore CommandOrControl + Shift + R in production [#6](https://github.com/alex8088/electron-toolkit/issues/6)
+
 ### v2.0.1 (_2023-09-13_)
 
 - fix(utils): closing window via `esc` not working
