@@ -1,3 +1,9 @@
+### v3.0.0 (_2023-12-19_)
+
+- feat: support ESM
+- feat: deprecate sendTo api
+- fix: postMessage is available when context isolation is enabled [#5](https://github.com/alex8088/electron-toolkit/issues/5)
+
 ### v2.0.0 (_2023-06-04_)
 
 New way to remove a listener
