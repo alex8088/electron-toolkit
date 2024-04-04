@@ -15,7 +15,7 @@ export interface IpcRenderer {
    * Adds a one time `listener` function for the event. This `listener` is invoked
    * only the next time a message is sent to `channel`, after which it is removed.
    */
-  once(channel: string, listener: IpcRendererListener): void
+  once(channel: string, listener: IpcRendererListener): () => void
   /**
    * Removes all listeners, or those of the specified `channel`.
    */
