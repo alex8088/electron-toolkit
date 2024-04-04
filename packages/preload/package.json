@@ -1,6 +1,6 @@
 {
   "name": "@electron-toolkit/preload",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Toolkit for electron preload scripts.",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",

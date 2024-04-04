@@ -1,3 +1,7 @@
+### v3.0.0 (_2024-04-04)
+
+- feat: allow to remove a once listener
+
 ### v3.0.0 (_2023-12-19_)
 
 - feat: support ESM
