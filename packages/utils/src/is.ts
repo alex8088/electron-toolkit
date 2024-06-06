@@ -5,5 +5,5 @@ export interface Is {
 }
 
 export const is: Is = {
-  dev: app && !app.isPackaged
+  dev: !app || !app.isPackaged
 }
