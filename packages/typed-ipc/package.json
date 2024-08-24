@@ -1,0 +1,50 @@
+{
+  "name": "@electron-toolkit/typed-ipc",
+  "version": "0.0.0",
+  "description": "Type-safe Electron IPC, best practices in TypeScript.",
+  "main": "dist/main.cjs",
+  "module": "dist/main.mjs",
+  "types": "dist/main.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.mjs",
+      "require": "./dist/main.cjs"
+    },
+    "./main": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.mjs",
+      "require": "./dist/main.cjs"
+    },
+    "./renderer": {
+      "types": "./dist/renderer.d.ts",
+      "import": "./dist/renderer.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Alex Wei<https://github.com/alex8088>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex8088/electron-toolkit.git",
+    "directory": "packages/typed-ipc"
+  },
+  "bugs": {
+    "url": "https://github.com/alex8088/electron-toolkit/issues"
+  },
+  "homepage": "https://github.com/alex8088/electron-toolkit/tree/master/packages/typed-ipc#readme",
+  "keywords": [
+    "electron",
+    "toolkit",
+    "ipc"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.ts --configPlugin typescript"
+  },
+  "peerDependencies": {
+    "electron": ">=13.0.0",
+    "@electron-toolkit/preload": ">=3.0.0"
+  }
+}

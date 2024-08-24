@@ -5,6 +5,7 @@ on:
       - 'tsconfig*'
       - 'preload*'
       - 'eslint-config*'
+      - 'typed-ipc*'
 
 name: Create Release
 

@@ -11,6 +11,7 @@
     "lint": "eslint --ext .ts packages/*/src/**",
     "typecheck": "tsc --noEmit",
     "build:preload": "pnpm run -C packages/preload build",
+    "build:ipc": "pnpm run -C packages/typed-ipc build",
     "build:utils": "pnpm run -C packages/utils build",
     "dev": "pnpm run -C packages/playground start"
   },
@@ -28,6 +29,9 @@
     ]
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^18.19.29",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
     "@typescript-eslint/parser": "^7.5.0",
@@ -39,6 +43,9 @@
     "picocolors": "^1.0.0",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
+    "rollup": "^4.21.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-rm": "^1.0.2",
     "simple-git-hooks": "^2.11.1",
     "tslib": "^2.6.2",
     "typescript": "^5.4.3",
