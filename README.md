@@ -16,6 +16,7 @@
 | [@electron-toolkit/eslint-config-prettier](packages/eslint-config-prettier) | ESLint config with Prettier support for Electron projects | [![eslint-config-prettier version](https://img.shields.io/npm/v/@electron-toolkit/eslint-config-prettier.svg?label=%20)](packages/eslint-config-prettier/CHANGELOG.md) |
 | [@electron-toolkit/utils](packages/utils)                                   | Utils for Electron main process                           | [![utils version](https://img.shields.io/npm/v/@electron-toolkit/utils.svg?label=%20)](packages/utils/CHANGELOG.md)                                                    |
 | [@electron-toolkit/tsconfig](packages/tsconfig)                             | TSConfigs for Electron projects to extend                 | [![tsconfig version](https://img.shields.io/npm/v/@electron-toolkit/tsconfig.svg?label=%20)](packages/tsconfig/CHANGELOG.md)                                           |
+| [@electron-toolkit/typed-ipc](packages/typed-ipc)                           | Type-safe Electron IPC                                    | [![ipc version](https://img.shields.io/npm/v/@electron-toolkit/typed-ipc.svg?label=%20)](packages/typed-ipc/CHANGELOG.md)                                              |
 | [@electron-toolkit/preload](packages/preload)                               | Expose Electron APIs to renderer process                  | [![preload version](https://img.shields.io/npm/v/@electron-toolkit/preload.svg?label=%20)](packages/preload/CHANGELOG.md)                                              |
 
 ## Contribution
