@@ -1,6 +1,6 @@
 {
   "name": "@electron-toolkit/typed-ipc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Type-safe Electron IPC, best practices in TypeScript.",
   "main": "dist/main.cjs",
   "module": "dist/main.mjs",
