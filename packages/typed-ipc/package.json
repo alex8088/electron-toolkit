@@ -21,6 +21,16 @@
       "import": "./dist/renderer.mjs"
     }
   },
+  "typesVersions": {
+    "*": {
+      "main": [
+        "./dist/main.d.ts"
+      ],
+      "renderer": [
+        "./dist/renderer.d.ts"
+      ]
+    }
+  },
   "files": [
     "dist"
   ],
