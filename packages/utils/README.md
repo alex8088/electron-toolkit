@@ -58,44 +58,6 @@ npm i @electron-toolkit/utils
 
     Skip proxy for Electron app
 
-### ipcHelper
-
-> The Ipc helper can make you easy to manage your main Ipc.
-
-- handle
-
-  - Type: (channel: string, listener: (event: IpcMainInvokeEvent, ...args: any[]) => Promise<void> | any): void
-
-  - Kind: async, sequential
-
-- on
-
-  - Type: () => (channel: string, listener: (event: IpcMainEvent, ...args: any[]) => void): this
-
-- removeAllListeners
-
-  - Type: (): this
-
-    Remove all register ipc listeners
-
-- removeAllHandlers
-
-  - Type: (): void
-
-    Remove all register ipc handlers
-
-- removeListeners
-
-  - Type: (channels: string[]): this
-
-    Remove ipc listeners
-
-- removeHandlers
-
-  - Type: (channels: string[]): void
-
-    Remove ipc handlers
-
 ### optimizer
 
 - watchWindowShortcuts
