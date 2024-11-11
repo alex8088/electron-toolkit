@@ -26,8 +26,11 @@ export class IpcListener<T extends IpcListenEventMap> {
   on<E extends keyof T>(
     channel: Extract<E, string>,
     listener: (e: Electron.IpcRendererEvent, ...args: T[E]) => void
-  ): void | Promise<void> {
-    window.electron.ipcRenderer.on(channel, listener as (event: Electron.IpcRendererEvent, ...args: any[]) => void)
+  ): () => void {
+    return window.electron.ipcRenderer.on(
+      channel,
+      listener as (event: Electron.IpcRendererEvent, ...args: any[]) => void
+    )
   }
 
   once<E extends keyof T>(
