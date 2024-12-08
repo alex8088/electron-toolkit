@@ -19,17 +19,17 @@ export class IpcListener<T extends IpcEventMap> {
     channel: Extract<E, string>,
     listener: (e: Electron.IpcMainEvent, ...args: ExtractArgs<T>[E]) => void | Promise<void>
   ): () => void {
-    let listeners = this.listeners.get(channel)
-    if (!listeners) {
-      listeners = new Set()
-      this.listeners.set(channel, listeners)
+    let channelListeners = this.listeners.get(channel)
+    if (!channelListeners) {
+      channelListeners = new Set()
+      this.listeners.set(channel, channelListeners)
     }
-    listeners.add(listener)
+    channelListeners.add(listener)
     ipcMain.on(channel, listener as (e: Electron.IpcMainEvent, ...args: any[]) => void)
     return () => {
       ipcMain.removeListener(channel, listener)
-      listeners.delete(listener)
-      if (listeners.size === 0) {
+      channelListeners.delete(listener)
+      if (channelListeners.size === 0) {
         this.listeners.delete(channel)
       }
     }
