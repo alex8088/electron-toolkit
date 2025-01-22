@@ -1,3 +1,7 @@
+### v3.0.0-beta.0 (_2025-01-22_)
+
+- feat!: add support for eslint flat config
+
 ### v2.0.0 (_2023-12-19_)
 
 - chore(deps): update eslint-config-prettier to v9
