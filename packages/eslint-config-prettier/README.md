@@ -2,7 +2,7 @@
 
 > ESLint config with Prettier support for Electron projects.
 
-Requires `eslint >= 8.0.0` and `prettier >= 3.0.0`.
+Requires `eslint >= 8.27.0` and `prettier >= 3.0.0`.
 
 This config is specifically designed to be used by `@quick-start/create-electron` setups.
 
@@ -16,15 +16,15 @@ npm add -D @electron-toolkit/eslint-config-prettier
 
 ## Usage
 
-Add `@electron-toolkit/eslint-config-prettier` to the `extends` array in your `.eslintrc.cjs` file. Make sure to put it **last**, so it gets the chance to override other configs.
+Import `@electron-toolkit/eslint-config-prettier` and add it as the **last** item in the configuration array in your `eslint.config.js` file so that it has the opportunity to override other configs.
 
 ```js
-module.exports = {
-  extends: [
-    // ... other configs
-    '@electron-toolkit/eslint-config-prettier'
-  ]
-}
+import prettierConfig from "@electron-toolkit/eslint-config-prettier";
+
+export default [
+  // Any other config imports go at the top
+  prettierConfig
+];
 ```
 
 This configuration is the most straightward way to use ESLint with Prettier.
