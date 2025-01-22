@@ -1,3 +1,4 @@
 node_modules
 docs
 dist
+packages/eslint-config-prettier/*.d.ts

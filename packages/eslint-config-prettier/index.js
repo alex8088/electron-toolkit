@@ -1,6 +1,12 @@
+const recommendedConfig = require('eslint-plugin-prettier/recommended')
+
+/**
+ * @type {import('eslint').Linter.Config}
+ */
 module.exports = {
-  extends: ['plugin:prettier/recommended'],
+  ...recommendedConfig,
   rules: {
+    ...recommendedConfig.rules,
     'prettier/prettier': 'warn'
   }
 }
