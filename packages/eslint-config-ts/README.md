@@ -2,11 +2,9 @@
 
 > Basic ESLint config for Electron-TypeScript projects.
 
-Requires `eslint >= 8.0.0`.
+Requires `eslint >= 8.56.0`.
 
 This config is specifically designed to be used by `@quick-start/create-electron` setups.
-
-See [@typescript-eslint/eslint-plugin](https://typescript-eslint.io/rules/) for available rules.
 
 ## Installation
 
@@ -16,34 +14,22 @@ npm add -D @electron-toolkit/eslint-config-ts
 
 ## Usage
 
-This package comes with 3 rulesets.
+This package exports the following:
 
-### @electron-toolkit/eslint-config-ts
+| name    | Description                                               |
+| ------- | --------------------------------------------------------- |
+| config  | A utility function for creating type-safe flat configs, export form `typescript-eslint` |
+| configs | Built-in configurations: `base` and `recommended` |
 
-This ruleset is the base configuration for Electron-TypeScript projects.
-
-```js
-module.exports = {
-  extends: ['@electron-toolkit/eslint-config-ts']
-}
-```
-
-### @electron-toolkit/eslint-config-ts/eslint-recommended
-
-Built-in some recommended rules for Electron-TypeScript projects.
+Import `@electron-toolkit/eslint-config-ts` and add it to the configuration array in your `eslint.config.js` file.
 
 ```js
-module.exports = {
-  extends: ['@electron-toolkit/eslint-config-ts/eslint-recommended']
-}
+import tseslint from "@electron-toolkit/eslint-config-ts";
+
+export default tseslint.config(
+  tseslint.configs.recommended,
+  // Any other config
+);
 ```
 
-### @electron-toolkit/eslint-config-ts/recommended
 
-This is extended from `@electron-toolkit/eslint-config-ts` and `@electron-toolkit/eslint-config-ts/eslint-recommended` ruleset.
-
-```js
-module.exports = {
-  extends: ['@electron-toolkit/eslint-config-ts/recommended']
-}
-```
