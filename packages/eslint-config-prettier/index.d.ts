@@ -1,5 +1,5 @@
-import { Linter } from 'eslint'
+import { Linter } from 'eslint';
 
-declare const recommendedConfig: Linter.FlatConfig
+declare const config: Linter.FlatConfig;
 
-export = recommendedConfig
+export = config;
