@@ -2,7 +2,7 @@
 
 > Basic ESLint config for Electron projects.
 
-Requires `eslint >= 8.0.0`.
+Requires `eslint >= 8.21.0`.
 
 This config is specifically designed to be used by `@quick-start/create-electron` setups.
 
@@ -14,10 +14,13 @@ npm add -D @electron-toolkit/eslint-config
 
 ## Usage
 
-Add `@electron-toolkit/eslint-config` to the `extends` array in your `.eslintrc.cjs` file.
+Import `@electron-toolkit/eslint-config` and add it to the configuration array in your `eslint.config.js` file.
 
 ```js
-module.exports = {
-  extends: ['@electron-toolkit']
-}
+import eslintConfig from "@electron-toolkit/eslint-config";
+
+export default [
+  eslintConfig
+  // Any other config
+];
 ```
