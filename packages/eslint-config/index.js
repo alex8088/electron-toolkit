@@ -1,15 +1,28 @@
+const eslint = require('@eslint/js')
+const globals = require('globals')
+
+/**
+ * @type { import('eslint').Linter.Config }
+ */
 module.exports = {
-  env: {
-    browser: true,
-    commonjs: true,
-    es6: true,
-    node: true
-  },
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
+  ...eslint.configs.recommended,
+  languageOptions: {
+    ecmaVersion: 2022,
+    globals: {
+      ...globals.browser,
+      ...globals.es2021,
+      ...globals.node,
+      document: 'readonly',
+      navigator: 'readonly',
+      window: 'readonly'
     },
-    sourceType: 'module',
-    ecmaVersion: 2021
+    parserOptions: {
+      ecmaFeatures: {
+        jsx: true
+      },
+      ecmaVersion: 2022,
+      sourceType: 'module'
+    },
+    sourceType: 'module'
   }
 }

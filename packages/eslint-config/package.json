@@ -3,8 +3,16 @@
   "version": "1.0.2",
   "description": "Basic ESLint config for Electron projects.",
   "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "author": "Alex Wei<https://github.com/alex8088>",
   "license": "MIT",
@@ -22,9 +30,13 @@
     "eslint"
   ],
   "devDependencies": {
-    "eslint": "^8.57.0"
+    "eslint": "^9.18.0"
   },
   "peerDependencies": {
-    "eslint": ">= 8.0.0"
+    "eslint": ">= 8.21.0"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.18.0",
+    "globals": "^15.14.0"
   }
 }
