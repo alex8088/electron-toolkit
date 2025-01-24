@@ -4,4 +4,5 @@ packages/preload/dist/
 packages/utils/dist/
 packages/eslint-config/index.d.ts
 packages/eslint-config-prettier/index.d.ts
+packages/eslint-config-ts/index.d.ts
 pnpm-lock.yaml

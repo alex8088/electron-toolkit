@@ -3,10 +3,18 @@
   "version": "2.0.0",
   "description": "Basic ESLint config for Electron-TypeScript projects.",
   "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
   "files": [
+    "eslint-base.js",
     "eslint-recommended.js",
     "index.js",
-    "recommended.js"
+    "index.d.ts"
   ],
   "author": "Alex Wei<https://github.com/alex8088>",
   "license": "MIT",
@@ -25,12 +33,13 @@
     "typescript"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.5.0",
-    "@typescript-eslint/parser": "^7.5.0"
+    "@eslint/js": "^9.18.0",
+    "globals": "^15.14.0",
+    "typescript-eslint": "^8.21.0"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "typescript": "^5.4.3"
+    "eslint": "^9.18.0",
+    "typescript": "^5.7.3"
   },
   "peerDependencies": {
     "eslint": ">=8.56.0",

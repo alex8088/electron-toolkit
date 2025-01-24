@@ -1,4 +1,10 @@
+const base = require('./eslint-base')
+
+/**
+ * @type { import('eslint').Linter.Config }
+ */
 module.exports = {
+  ...base,
   rules: {
     '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
     '@typescript-eslint/explicit-function-return-type': 'error',
