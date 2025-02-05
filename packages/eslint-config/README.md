@@ -17,10 +17,10 @@ npm add -D @electron-toolkit/eslint-config
 Import `@electron-toolkit/eslint-config` and add it to the configuration array in your `eslint.config.js` file.
 
 ```js
-import eslintConfig from "@electron-toolkit/eslint-config";
+import eslintConfig from '@electron-toolkit/eslint-config'
 
 export default [
   eslintConfig
   // Any other config
-];
+]
 ```
