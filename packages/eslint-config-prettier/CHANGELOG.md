@@ -1,3 +1,7 @@
+### v3.0.0-beta.1 (_2025-02-05_)
+
+- chore: update dts
+
 ### v3.0.0-beta.0 (_2025-01-22_)
 
 - feat!: add support for eslint flat config
