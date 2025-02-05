@@ -11,10 +11,7 @@ module.exports = {
     globals: {
       ...globals.browser,
       ...globals.es2021,
-      ...globals.node,
-      document: 'readonly',
-      navigator: 'readonly',
-      window: 'readonly'
+      ...globals.node
     },
     parserOptions: {
       ecmaFeatures: {
