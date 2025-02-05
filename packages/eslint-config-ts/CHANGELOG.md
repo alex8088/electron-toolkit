@@ -1,6 +1,14 @@
+### v3.0.0-beta.1 (_2025-02-05_)
+
+- fix: export flat config as array
+
+### v3.0.0-beta.0 (_2025-01-24_)
+
+- feat: move to eslint flat config
+
 ### v2.0.0 (_2024-04-04_)
 
-- chore(deps): update @typescript-eslint/* to v7
+- chore(deps): update @typescript-eslint/\* to v7
 
 ### v1.0.1 (_2023-12-19_)
 
