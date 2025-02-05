@@ -16,20 +16,18 @@ npm add -D @electron-toolkit/eslint-config-ts
 
 This package exports the following:
 
-| name    | Description                                               |
-| ------- | --------------------------------------------------------- |
+| name    | Description                                                                             |
+| ------- | --------------------------------------------------------------------------------------- |
 | config  | A utility function for creating type-safe flat configs, export form `typescript-eslint` |
-| configs | Built-in configurations: `base` and `recommended` |
+| configs | Built-in configurations: `base` and `recommended`                                       |
 
 Import `@electron-toolkit/eslint-config-ts` and add it to the configuration array in your `eslint.config.js` file.
 
 ```js
-import tseslint from "@electron-toolkit/eslint-config-ts";
+import tseslint from '@electron-toolkit/eslint-config-ts'
 
 export default tseslint.config(
-  tseslint.configs.recommended,
+  tseslint.configs.recommended
   // Any other config
-);
+)
 ```
-
-
