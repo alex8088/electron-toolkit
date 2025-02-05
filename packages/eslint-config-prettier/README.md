@@ -19,12 +19,12 @@ npm add -D @electron-toolkit/eslint-config-prettier
 Import `@electron-toolkit/eslint-config-prettier` and add it as the **last** item in the configuration array in your `eslint.config.js` file so that it has the opportunity to override other configs.
 
 ```js
-import prettierConfig from "@electron-toolkit/eslint-config-prettier";
+import prettierConfig from '@electron-toolkit/eslint-config-prettier'
 
 export default [
   // Any other config imports go at the top
   prettierConfig
-];
+]
 ```
 
 This configuration is the most straightward way to use ESLint with Prettier.
