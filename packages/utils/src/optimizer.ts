@@ -5,11 +5,11 @@ export type shortcutOptions = {
   /**
    * Use `ESC` key to close window, default `false`.
    */
-  escToCloseWindow: boolean
+  escToCloseWindow?: boolean
   /**
    * Zoom in (`Minus + CommandOrControl`) or zoom out(`Equal + Shift + CommandOrControl`), default `false`.
    */
-  zoom: boolean
+  zoom?: boolean
 }
 
 export interface Optimizer {
