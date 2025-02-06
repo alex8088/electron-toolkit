@@ -38,10 +38,7 @@ export const electronApp: ElectronApp = {
       return app.getLoginItemSettings().openAtLogin
     }
     if (isOpenAtLogin() !== auto) {
-      app.setLoginItemSettings({
-        openAtLogin: auto,
-        path: process.execPath
-      })
+      app.setLoginItemSettings({ openAtLogin: auto })
       return isOpenAtLogin() === auto
     } else {
       return true
