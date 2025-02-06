@@ -52,6 +52,9 @@ export const optimizer: Optimizer = {
         if (!is.dev) {
           // Ignore CommandOrControl + R
           if (input.code === 'KeyR' && (input.control || input.meta)) event.preventDefault()
+          if (input.code === 'KeyI' && ((input.alt && input.meta) || (input.control && input.shift))) {
+            event.preventDefault()
+          }
         } else {
           // Toggle devtool(F12)
           if (input.code === 'F12') {
