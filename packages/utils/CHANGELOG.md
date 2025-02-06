@@ -1,3 +1,10 @@
+### v4.0.0 (_2025-02-06_)
+
+- refactor: remove ipc helper
+- fix: disable devtool shortcut key in production
+- fix: watchWindowShortcuts method parameter type [#17](https://github.com/alex8088/electron-toolkit/issues/17)
+- fix: auto launch not work [#16](https://github.com/alex8088/electron-toolkit/issues/16)
+
 ### v3.0.0 (_2023-12-19_)
 
 - feat: support ESM
