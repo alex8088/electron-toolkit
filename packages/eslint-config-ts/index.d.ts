@@ -1,4 +1,4 @@
-import { config } from 'typescript-eslint';
+import { config, parser, plugin } from 'typescript-eslint';
 import type { ConfigArray } from 'typescript-eslint';
 
 declare const _default: {
@@ -7,6 +7,8 @@ declare const _default: {
     base: ConfigArray[],
     recommended: ConfigArray[]
   }
+  parser: typeof parser
+  plugin: typeof plugin
 };
 
 export = _default;

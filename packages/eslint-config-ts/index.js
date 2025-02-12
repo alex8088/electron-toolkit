@@ -5,5 +5,7 @@ module.exports = {
   configs: {
     base: require('./eslint-base'),
     recommended: require('./eslint-recommended')
-  }
+  },
+  parser: tseslint.parser,
+  plugin: tseslint.plugin
 }
