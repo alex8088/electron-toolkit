@@ -1,13 +1,11 @@
 const eslint = require('@eslint/js')
 const globals = require('globals')
-const tseslint = require('typescript-eslint')
 
 /**
  * @type { import('typescript-eslint').ConfigArray }
  */
 module.exports = [
   eslint.configs.recommended,
-  ...tseslint.configs.recommended,
   {
     languageOptions: {
       ecmaVersion: 2022,

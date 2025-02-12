@@ -12,7 +12,9 @@
   },
   "files": [
     "eslint-base.js",
+    "eslint-recommended-type-checked.js",
     "eslint-recommended.js",
+    "eslint-typescript.js",
     "index.js",
     "index.d.ts"
   ],
