@@ -1,3 +1,8 @@
+### v3.0.0-beta.2 (_2025-02-12_)
+
+- feat: export parser and plugin
+- feat: export recommendedTypeChecked config
+
 ### v3.0.0-beta.1 (_2025-02-05_)
 
 - fix: export flat config as array
