@@ -2,7 +2,7 @@
 
 > Basic ESLint config for Electron projects.
 
-Requires `eslint >= 8.21.0`.
+Requires `eslint >= 9.0.0`.
 
 This config is specifically designed to be used by `@quick-start/create-electron` setups.
 
