@@ -6,6 +6,7 @@ declare const _default: {
   configs: {
     base: ConfigArray[],
     recommended: ConfigArray[]
+    recommendedTypeChecked: ConfigArray[]
   }
   parser: typeof parser
   plugin: typeof plugin
