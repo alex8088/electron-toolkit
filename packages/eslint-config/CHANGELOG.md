@@ -1,3 +1,7 @@
+### v2.0.0 (_2025-02-13_)
+
+- feat: move to eslint flat config
+
 ### v2.0.0-beta.0 (_2025-02-05_)
 
 - feat: move to eslint flat config
