@@ -1,3 +1,8 @@
+### v2.1.0 (_2025-04-13_)
+
+- chore: update globals to v16
+- chore: bump deps
+
 ### v2.0.0 (_2025-02-13_)
 
 - feat: move to eslint flat config
