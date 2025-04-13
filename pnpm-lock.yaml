@@ -75,8 +75,8 @@ importers:
   packages/eslint-config:
     dependencies:
       '@eslint/js':
-        specifier: ^9.18.0
-        version: 9.18.0
+        specifier: ^9.24.0
+        version: 9.24.0
       globals:
         specifier: ^15.14.0
         version: 15.14.0
