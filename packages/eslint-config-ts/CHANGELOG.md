@@ -1,3 +1,13 @@
+### v3.1.0 (_2025-04-13_)
+
+- fix: remove deprecated rules
+- fix: relax '@typescript-eslint/explicit-function-return-type' rule
+- feat: add '@typescript-eslint/no-empty-object-type' rule and always allow interfaces
+- feat: add '@typescript-eslint/no-require-imports' rule
+- feat: add '@typescript-eslint/no-unused-expressions' rule
+- chore: update globals to v16
+- chore: bump deps
+
 ### v3.0.0 (_2025-02-13_)
 
 - feat: move to eslint flat config

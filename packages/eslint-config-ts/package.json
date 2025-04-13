@@ -1,6 +1,6 @@
 {
   "name": "@electron-toolkit/eslint-config-ts",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Basic ESLint config for Electron-TypeScript projects.",
   "main": "index.js",
   "types": "index.d.ts",
