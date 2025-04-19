@@ -32,7 +32,7 @@
     "main process"
   ],
   "scripts": {
-    "build": "unbuild"
+    "build": "rollup -c rollup.config.ts --configPlugin typescript"
   },
   "peerDependencies": {
     "electron": ">=13.0.0"
