@@ -1,6 +1,6 @@
 # @electron-toolkit/preload
 
-> Easy to expose Electron APIs (ipcRenderer,webFrame,process) to renderer.
+> Easy to expose Electron APIs (ipcRenderer,webFrame,webUtils,process) to renderer.
 
 ---
 
@@ -92,6 +92,10 @@ declare global {
 - `insertCSS`
 - `setZoomFactor`
 - `setZoomLevel`
+
+### WebUtils
+
+- `getPathForFile`
 
 ### NodeProcess
 

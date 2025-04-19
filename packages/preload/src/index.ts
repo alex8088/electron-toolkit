@@ -1,7 +1,7 @@
-import { ipcRenderer, webFrame, contextBridge } from 'electron'
+import { ipcRenderer, webFrame, webUtils, contextBridge } from 'electron'
 import { ElectronAPI } from './types'
 
-export type { ElectronAPI, IpcRenderer, IpcRendererListener, WebFrame, NodeProcess } from './types'
+export type { ElectronAPI, IpcRenderer, IpcRendererListener, WebFrame, WebUtils, NodeProcess } from './types'
 
 export const electronAPI: ElectronAPI = {
   ipcRenderer: {
@@ -62,6 +62,11 @@ export const electronAPI: ElectronAPI = {
       if (typeof level === 'number') {
         webFrame.setZoomLevel(level)
       }
+    }
+  },
+  webUtils: {
+    getPathForFile(file) {
+      return webUtils.getPathForFile(file)
     }
   },
   process: {
