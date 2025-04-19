@@ -1,3 +1,7 @@
+### v3.0.2 (_2025-04-19_)
+
+- feat: add 'webUtils.getPathForFile' api
+
 ### v3.0.1 (_2024-04-04_)
 
 - feat: allow to remove a once listener
