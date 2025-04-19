@@ -1,4 +1,4 @@
-### v3.0.0 (_2024-04-04)
+### v3.0.1 (_2024-04-04_)
 
 - feat: allow to remove a once listener
 
