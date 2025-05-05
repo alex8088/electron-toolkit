@@ -35,6 +35,6 @@
     "build": "rollup -c rollup.config.ts --configPlugin typescript"
   },
   "peerDependencies": {
-    "electron": ">=13.0.0"
+    "electron": ">=13.0.0 || >=28.0.0-0"
   }
 }
