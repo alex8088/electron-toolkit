@@ -1,4 +1,10 @@
-### v1.0.0 (_2022-03-31_)
+### v2.0.0 (_2025-09-21_)
+
+#### Features
+
+- feat: set `moduleResolution` to `bundler`
+
+### v1.0.1 (_2022-03-31_)
 
 #### Bug Fixes
 
