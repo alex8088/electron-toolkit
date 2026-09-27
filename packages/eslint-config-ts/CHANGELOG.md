@@ -1,3 +1,10 @@
+### v4.0.0 (_2026-09-27_)
+
+- chore: update @eslint/js to v10
+- chore: update eslint to v10
+- chore: update globals to v17
+- chore: bump deps
+
 ### v3.1.0 (_2025-04-13_)
 
 - fix: remove deprecated rules
