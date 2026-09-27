@@ -1,3 +1,8 @@
+### v3.0.1 (_2026-09-27_)
+
+- chore: update eslint to v10
+- chore: bump deps
+
 ### v3.0.0 (_2025-02-12_)
 
 - feat!: move to eslint flat config
