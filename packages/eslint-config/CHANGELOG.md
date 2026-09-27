@@ -1,3 +1,7 @@
+### v3.0.0 (_2026-09-27_)
+
+- chore: update @eslint/js to v10, eslint to v10, and globals to v17
+
 ### v2.1.0 (_2025-04-13_)
 
 - chore: update globals to v16
