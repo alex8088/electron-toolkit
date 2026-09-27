@@ -86,14 +86,14 @@ importers:
     dependencies:
       eslint-config-prettier:
         specifier: ^10.0.1
-        version: 10.1.8(eslint@9.39.4)
+        version: 10.1.8(eslint@10.11.0)
       eslint-plugin-prettier:
         specifier: ^5.2.3
-        version: 5.5.5(eslint-config-prettier@10.1.8(eslint@9.39.4))(eslint@9.39.4)(prettier@3.8.1)
+        version: 5.5.5(eslint-config-prettier@10.1.8(eslint@10.11.0))(eslint@10.11.0)(prettier@3.8.1)
     devDependencies:
       eslint:
-        specifier: ^9.18.0
-        version: 9.39.4
+        specifier: ^10.11.0
+        version: 10.11.0
       prettier:
         specifier: ^3.4.2
         version: 3.8.1
@@ -2263,9 +2263,22 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
+  eslint-config-prettier@10.1.8(eslint@10.11.0):
+    dependencies:
+      eslint: 10.11.0
+
   eslint-config-prettier@10.1.8(eslint@9.39.4):
     dependencies:
       eslint: 9.39.4
+
+  eslint-plugin-prettier@5.5.5(eslint-config-prettier@10.1.8(eslint@10.11.0))(eslint@10.11.0)(prettier@3.8.1):
+    dependencies:
+      eslint: 10.11.0
+      prettier: 3.8.1
+      prettier-linter-helpers: 1.0.1
+      synckit: 0.11.12
+    optionalDependencies:
+      eslint-config-prettier: 10.1.8(eslint@10.11.0)
 
   eslint-plugin-prettier@5.5.5(eslint-config-prettier@10.1.8(eslint@9.39.4))(eslint@9.39.4)(prettier@3.8.1):
     dependencies:
