@@ -4,7 +4,6 @@
   "compilerOptions": {
     "isolatedModules": false,
     "resolveJsonModule": false,
-    "module": "UMD",
     "declaration": false,
     "outDir": "dist"
   }
