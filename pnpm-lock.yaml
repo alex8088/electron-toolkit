@@ -101,8 +101,8 @@ importers:
   packages/eslint-config-ts:
     dependencies:
       '@eslint/js':
-        specifier: ^9.24.0
-        version: 9.39.4
+        specifier: ^10.0.1
+        version: 10.0.1(eslint@9.39.4)
       globals:
         specifier: ^16.0.0
         version: 16.5.0
@@ -1584,6 +1584,10 @@ snapshots:
   '@eslint/js@10.0.1(eslint@10.11.0)':
     optionalDependencies:
       eslint: 10.11.0
+
+  '@eslint/js@10.0.1(eslint@9.39.4)':
+    optionalDependencies:
+      eslint: 9.39.4
 
   '@eslint/js@9.39.4': {}
 
